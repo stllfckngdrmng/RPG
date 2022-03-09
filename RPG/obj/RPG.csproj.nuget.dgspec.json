@@ -46,11 +46,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.14, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.10, )"
             },
             "System.Data.OleDb": {
               "target": "Package",

@@ -14,10 +14,11 @@ namespace RPG
             connectObject.UrlConnection.AddMapping<Skill>(x => x.Range, "Distation");
             var skills = from a in connectObject.UrlConnection.Worksheet<Skill>("Skils").ToList()
                     select a;
+            var nn = skills.Where(x => x.Name != null);
 
             using (var context = new RpgDbContext())
             {
-                context.Skills.AddRange(skills);
+                context.Skills.AddRange(nn);
                 
                 context.SaveChanges();
             }
